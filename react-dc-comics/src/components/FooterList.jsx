@@ -1,5 +1,5 @@
 const FooterList = () => {
-    return <footer>
+    return <footer className="footer-list">
         <div className="container">
             <div className="footer-columns">
                 <div className="footer-col">

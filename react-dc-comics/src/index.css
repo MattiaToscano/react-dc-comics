@@ -85,7 +85,7 @@ main div.container {
   font-size: 15px;
 }
 
-/* Main LIST */
+/* MAIN LIST */
 
 section {
   background-color: #0282f9;
@@ -96,7 +96,6 @@ section div.container {
   display: flex;
 }
 
-/* MainList component styles */
 section div.container ul {
   display: flex;
   justify-content: space-around;
@@ -126,7 +125,7 @@ section div.container ul li a {
 }
 
 /* FOOTER LIST */
-footer {
+.footer-list {
   background-image: url('/src/assets/img/footer-bg.jpg');
   background-size: cover;
   background-position: center;
@@ -143,7 +142,7 @@ footer .container {
   display: flex;
   gap: 30px;
   width: 100%;
-  /* Occupa tutto lo spazio disponibile */
+
 }
 
 .footer-col {
@@ -179,7 +178,7 @@ footer .container {
   justify-content: flex-end;
   align-items: center;
   position: relative;
-  z-index: 1;
+
 }
 
 .footer-col.logo img {
@@ -189,6 +188,57 @@ footer .container {
   position: absolute;
   bottom: -100px;
   right: 0;
-  transform: translateY(0);
+}
 
+/* FOOTER FOLLOW */
+.footer-follow {
+  background-color: #303030;
+  padding: 30px 0;
+}
+
+.footer-follow-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-signup-btn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #0282f9;
+  padding: 15px 25px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+}
+
+.footer-social-title {
+  color: #0282f9;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-social-item {
+  display: flex;
+  align-items: center;
+}
+
+.footer-social-link img {
+  width: 35px;
+  height: 35px;
 }
