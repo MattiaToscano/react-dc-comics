@@ -44,6 +44,11 @@ ul {
   gap: 20px;
 }
 
+li {
+  font-weight: bold;
+  font-size: 14px
+}
+
 ul li a:hover {
   color: #0282f9;
 }
