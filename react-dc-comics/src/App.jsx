@@ -1,5 +1,6 @@
 import Header from './components/Header'
 import MainContent from './components/MainContent'
+import MainList from './components/MainList'
 
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header />
       <MainContent />
+      <MainList />
 
     </>
   )
