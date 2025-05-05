@@ -63,7 +63,7 @@ ul li a:focus {
 }
 
 /* Crea una linea sotto il link quando ha il focus */
-ul li a:focus::after {
+header ul li a:focus::after {
   content: '';
   display: block;
   position: absolute;
@@ -126,3 +126,69 @@ section div.container ul li a {
 }
 
 /* FOOTER LIST */
+footer {
+  background-image: url('/src/assets/img/footer-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 60px 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-columns {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  /* Occupa tutto lo spazio disponibile */
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-start;
+}
+
+.footer-col h2 {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-col ul li a {
+  color: #959595;
+  font-size: 11px;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.footer-col.logo {
+  margin-left: auto;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-col.logo img {
+  max-width: 600px;
+  height: auto;
+  object-fit: contain;
+  position: absolute;
+  bottom: -100px;
+  right: 0;
+  transform: translateY(0);
+
+}
