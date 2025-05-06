@@ -287,31 +287,39 @@ footer .container {
 .card-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
   justify-content: center;
+  gap: 20px;
   margin-top: 30px;
+  margin: 0 auto;
 }
 
 .comic-card {
+  flex: calc(16.666% - 17px);
+  margin-bottom: 20px;
+}
 
-  min-width: 100x;
-  max-width: 150px;
+.comic-card {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .card-img {
   width: 100%;
   height: 200px;
-  border-radius: 10px;
   object-fit: cover;
+  border-radius: 0;
+  margin-bottom: 10px;
 }
 
 .comic-card h3 {
   color: white;
-  font-size: 14px;
+  font-size: 12px;
   margin-top: 10px;
   text-transform: uppercase;
+  width: 100%;
+  text-align: center;
 }
 
 .load-more-container {
