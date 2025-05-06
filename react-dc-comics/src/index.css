@@ -295,21 +295,3 @@ footer .container {
   margin-top: 10px;
   text-transform: uppercase;
 }
-
-@media (max-width: 1200px) {
-  .comic-card {
-    flex-basis: calc(25% - 30px);
-  }
-}
-
-@media (max-width: 768px) {
-  .comic-card {
-    flex-basis: calc(33.33% - 30px);
-  }
-}
-
-@media (max-width: 576px) {
-  .comic-card {
-    flex-basis: calc(50% - 30px);
-  }
-}
