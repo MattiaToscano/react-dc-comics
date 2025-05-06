@@ -1,5 +1,5 @@
 const MainList = () => {
-    return <section>
+    return <section className="main-list">
         <div className="container">
             <ul>
                 <li>

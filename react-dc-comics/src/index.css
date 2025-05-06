@@ -87,30 +87,30 @@ main div.container {
 
 /* MAIN LIST */
 
-section {
+.main-list {
   background-color: #0282f9;
   padding: 40px;
 }
 
-section div.container {
+.main-list div.container {
   display: flex;
 }
 
-section div.container ul {
+.main-list div.container ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 30px;
 }
 
-section div.container ul li {
+.main-list div.container ul li {
   display: flex;
   align-items: center;
   gap: 10px;
   color: white;
 }
 
-section div.container img.logo {
+.main-list div.container img.logo {
   width: 70px;
   height: 70px;
   object-fit: contain;
@@ -118,7 +118,7 @@ section div.container img.logo {
 
 }
 
-section div.container ul li a {
+.main-list div.container ul li a {
   color: white;
   font-size: 12px;
   white-space: nowrap;
@@ -241,4 +241,75 @@ footer .container {
 .footer-social-link img {
   width: 35px;
   height: 35px;
+}
+
+
+/* CoMICS */
+
+.comics-list {
+  background-color: #1c1c1c;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.comics-list h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.card-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  background-color: transparent;
+  width: 100%;
+  justify-content: center;
+}
+
+.comic-card {
+  flex-basis: calc(16.66% - 30px);
+  min-width: 100px;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img {
+  width: 100%;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+}
+
+.comic-card h3 {
+  color: white;
+  font-size: 14px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+  .comic-card {
+    flex-basis: calc(25% - 30px);
+  }
+}
+
+@media (max-width: 768px) {
+  .comic-card {
+    flex-basis: calc(33.33% - 30px);
+  }
+}
+
+@media (max-width: 576px) {
+  .comic-card {
+    flex-basis: calc(50% - 30px);
+  }
 }
