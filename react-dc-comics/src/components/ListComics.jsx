@@ -154,61 +154,68 @@ const comics = [
 ];
 
 const ListComics = () => {
-    return <section className="comics-list">
-        <h2>Current Series</h2>
-        <div className="container card-container">
-            <div className="card-list">
-                <div className="comic-card">
-                    <img src={comics[0].thumb} alt={comics[0].title} className="card-img" />
-                    <h3>{comics[0].series}</h3>
+    return (
+        <section className="comics-list">
+            <div className="comics-header">
+                <div className="current-series-badge">CURRENT SERIES</div>
+            </div>
+            <div className="container card-container">
+                <div className="card-list">
+                    <div className="comic-card">
+                        <img src={comics[0].thumb} alt={comics[0].title} className="card-img" />
+                        <h3>{comics[0].series}</h3>
+                    </div>
+                    <div className="comic-card">
+                        <img src={comics[1].thumb} alt={comics[1].title} className="card-img" />
+                        <h3>{comics[1].series}</h3>
+                    </div>
+                    <div className="comic-card">
+                        <img src={comics[2].thumb} alt={comics[2].title} className="card-img" />
+                        <h3>{comics[2].series}</h3>
+                    </div>
+                    <div className="comic-card">
+                        <img src={comics[3].thumb} alt={comics[3].title} className="card-img" />
+                        <h3>{comics[3].series}</h3>
+                    </div>
+                    <div className="comic-card">
+                        <img src={comics[4].thumb} alt={comics[4].title} className="card-img" />
+                        <h3>{comics[4].series}</h3>
+                    </div>
+                    <div className="comic-card">
+                        <img src={comics[5].thumb} alt={comics[5].title} className="card-img" />
+                        <h3>{comics[5].series}</h3>
+                    </div>
+                    <div className="comic-card">
+                        <img src={comics[6].thumb} alt={comics[6].title} className="card-img" />
+                        <h3>{comics[6].series}</h3>
+                    </div>
+                    <div className="comic-card">
+                        <img src={comics[7].thumb} alt={comics[7].title} className="card-img" />
+                        <h3>{comics[7].series}</h3>
+                    </div>
+                    <div className="comic-card">
+                        <img src={comics[8].thumb} alt={comics[8].title} className="card-img" />
+                        <h3>{comics[8].series}</h3>
+                    </div>
+                    <div className="comic-card">
+                        <img src={comics[9].thumb} alt={comics[9].title} className="card-img" />
+                        <h3>{comics[9].series}</h3>
+                    </div>
+                    <div className="comic-card">
+                        <img src={comics[10].thumb} alt={comics[10].title} className="card-img" />
+                        <h3>{comics[10].series}</h3>
+                    </div>
+                    <div className="comic-card">
+                        <img src={comics[11].thumb} alt={comics[11].title} className="card-img" />
+                        <h3>{comics[11].series}</h3>
+                    </div>
                 </div>
-                <div className="comic-card">
-                    <img src={comics[1].thumb} alt={comics[1].title} className="card-img" />
-                    <h3>{comics[1].series}</h3>
-                </div>
-                <div className="comic-card">
-                    <img src={comics[2].thumb} alt={comics[2].title} className="card-img" />
-                    <h3>{comics[2].series}</h3>
-                </div>
-                <div className="comic-card">
-                    <img src={comics[3].thumb} alt={comics[3].title} className="card-img" />
-                    <h3>{comics[3].series}</h3>
-                </div>
-                <div className="comic-card">
-                    <img src={comics[4].thumb} alt={comics[4].title} className="card-img" />
-                    <h3>{comics[4].series}</h3>
-                </div>
-                <div className="comic-card">
-                    <img src={comics[5].thumb} alt={comics[5].title} className="card-img" />
-                    <h3>{comics[5].series}</h3>
-                </div>
-                <div className="comic-card">
-                    <img src={comics[6].thumb} alt={comics[6].title} className="card-img" />
-                    <h3>{comics[6].series}</h3>
-                </div>
-                <div className="comic-card">
-                    <img src={comics[7].thumb} alt={comics[7].title} className="card-img" />
-                    <h3>{comics[7].series}</h3>
-                </div>
-                <div className="comic-card">
-                    <img src={comics[8].thumb} alt={comics[8].title} className="card-img" />
-                    <h3>{comics[8].series}</h3>
-                </div>
-                <div className="comic-card">
-                    <img src={comics[9].thumb} alt={comics[9].title} className="card-img" />
-                    <h3>{comics[9].series}</h3>
-                </div>
-                <div className="comic-card">
-                    <img src={comics[10].thumb} alt={comics[10].title} className="card-img" />
-                    <h3>{comics[10].series}</h3>
-                </div>
-                <div className="comic-card">
-                    <img src={comics[11].thumb} alt={comics[11].title} className="card-img" />
-                    <h3>{comics[11].series}</h3>
+                <div className="load-more-container">
+                    <button className="load-more-btn">LOAD MORE</button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    );
 }
 
 export default ListComics;

@@ -1,11 +1,11 @@
 import ListComics from './ListComics.jsx'
 
 const MainContent = () => {
-    return (<main>
-        <div className="container">
+    return (
+        <main>
             <ListComics />
-        </div>
-    </main>
+        </main>
     )
 }
+
 export default MainContent

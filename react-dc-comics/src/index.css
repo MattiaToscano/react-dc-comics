@@ -248,8 +248,8 @@ footer .container {
 
 .comics-list {
   background-color: #1c1c1c;
-  padding: 40px 0;
-  overflow: hidden;
+  padding: 0 0 40px 0;
+  position: relative;
 }
 
 .comics-list h2 {
@@ -260,32 +260,50 @@ footer .container {
   text-transform: uppercase;
 }
 
+.comics-header {
+  position: relative;
+  height: 30px;
+}
+
+.current-series-badge {
+  position: absolute;
+  top: -15px;
+  left: 15%;
+  background-color: #0282f9;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
 .card-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px;
 }
 
 .card-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  background-color: transparent;
-  width: 100%;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .comic-card {
-  flex-basis: calc(16.66% - 30px);
-  min-width: 100px;
-  max-width: 200px;
+
+  min-width: 100x;
+  max-width: 150px;
   display: flex;
   flex-direction: column;
 }
 
 .card-img {
   width: 100%;
-  aspect-ratio: 2/3;
+  height: 200px;
+  border-radius: 10px;
   object-fit: cover;
 }
 
@@ -294,4 +312,20 @@ footer .container {
   font-size: 14px;
   margin-top: 10px;
   text-transform: uppercase;
+}
+
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.load-more-btn {
+  background-color: #0282f9;
+  color: white;
+  border: none;
+  padding: 10px 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
 }
