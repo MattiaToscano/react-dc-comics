@@ -162,9 +162,11 @@ const ListComics = () => {
                 <div className="current-series-badge">CURRENT SERIES</div>
             </div>
             <div className="container card-container">
-                {comics.map((comic) => (
-                    
-                ))}
+                <div className="card-list">
+                    {comics.map((comic) => (
+                        <ComicCard comic={comic} />
+                    ))}
+                </div>
                 <div className="load-more-container">
                     <button className="load-more-btn">LOAD MORE</button>
                 </div>
